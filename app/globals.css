@@ -19,7 +19,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.cards-container{
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+ display: grid;
+ grid-template-columns:repeat(3,minmax(150px,1fr));
+ gap: 50px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+  color: #171717;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
