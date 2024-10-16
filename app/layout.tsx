@@ -12,10 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
+      <body>
         {children}
+        <div id="modal-root"></div>
       </body>
     </html>
   );
